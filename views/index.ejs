@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D product View</title>
+        <link rel="stylesheet" href="/css/Global.css">
+        <link rel="stylesheet" href="/css/product-page.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="product-div">
+            <%- include("components/Header.ejs"); -%>
+            <div class="product">
+                <div id="product-details">
+                    <h1>Mason Jar</h1>
+                    <h3>$3.99</h3>
+                    <ul>
+                        <li>Preserve whole fruits and vegetables in these Wide Mouth Mason jars to ensure your canning creations remain fresh and delicious; glass jars feature lids that seal for up to 18 months</li>
+                        <li>The timeless design of these quart jars also makes them great for gifting, creative decor, crafting, and drinkware</li>
+                        <li>
+                            Wrapped in sturdy packaging that keeps jars stable during shipping and helps them arrive breakage-free.
+                        </li>
+                        <li>
+                            BPA-free; wash before use and handle glass with care
+                        </li>
+                    </ul>
+                </div>
+                <div id="product3d"></div>
+            </div>
+        </div>
+        <script type="module" src="/js/main.js"></script>
+    </body>
+</html>

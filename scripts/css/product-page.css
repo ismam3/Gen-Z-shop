@@ -1,0 +1,36 @@
+.product-div{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(45deg,rgb(64, 135, 218), #1b9bff, #0F465B);
+}
+.product-div .product{
+    width: 100vw;
+    height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 100PX;
+}
+.product-div .product #product3d, .product-div .product #product-details{
+    height: calc(100vh - 100px);
+}
+#product-details h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.325;
+}
+#product-details h3{
+    font-size: 42px;
+    color: white;
+    font-weight: 900;
+    color: yellow;
+}
+#product-details ul li{
+    color: #fff;
+    opacity: .7;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    word-wrap: break-word;
+    width: 350px;
+}
