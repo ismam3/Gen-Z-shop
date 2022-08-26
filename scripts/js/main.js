@@ -37,9 +37,9 @@ const loader = new GLTFLoader();
 loader.load( '../assets/3d/mason-jar.glb', function ( gltf ) {
     var model = gltf.scene;
     gltf.scene.rotation.y = 90;
-    gltf.scene.scale.x = 1.5;
-    gltf.scene.scale.y = 1.5;
-    gltf.scene.scale.z = 1.5;
+    gltf.scene.scale.y = 1.6;
+    gltf.scene.scale.z = 1.6;
+    gltf.scene.scale.x = 1.6;
 	scene.add( gltf.scene );
 
 }, undefined, function ( error ) {

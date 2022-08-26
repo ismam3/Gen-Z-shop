@@ -1,10 +1,33 @@
+html{
+    scrollbar-color: rgb(64, 135, 218), #1b9bff;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+}
+html::-webkit-scrollbar-track{
+    background-color: rgb(64, 135, 218);
+}
+html::-webkit-scrollbar-thumb{
+    background:  #0F465B;
+    border-radius: 50px;
+}
+html::-moz-scrollbar{
+    width: 10px;
+}
+html::-moz-scrollbar-track{
+    background-color: rgb(64, 135, 218);
+}
+html::-moz-scrollbar-thumb{
+    background:  #0F465B;
+    border-radius: 50px;
+}
 body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 nav{
-    width: 100vw;
+    width: 98vw;
     height: 100px;
     background: transparent;
     
@@ -20,6 +43,7 @@ nav h1{
 nav ul{
     float: right;
     margin-right: 20px;
+    display: none;
 }
 nav ul li{
     display: inline-block;
@@ -36,4 +60,38 @@ nav ul li a{
 nav ul li a:hover{
     background: #1b9bff;
     transition: 0.5s;
+}
+#menubar{
+    height: 100px;
+    width: 100px;
+    float: right;
+    display: inline;
+    text-align: center;
+    padding-top: 30px;
+}
+nav i{
+    color: white;
+    font-weight: 900;
+}
+
+@media only screen and (min-width: 700px){
+    nav ul{
+        display: inline;
+    }
+    #menubar{
+        display: none;
+    }
+    html{
+        scrollbar-color: rgb(64, 135, 218), #1b9bff;
+    }
+    html::-webkit-scrollbar{
+        width: 10px;
+    }
+    html::-webkit-scrollbar-track{
+        background-color: rgb(64, 135, 218);
+    }
+    html::-webkit-scrollbar-thumb{
+        background:  #0F465B;
+        border-radius: 50px;
+    }
 }
